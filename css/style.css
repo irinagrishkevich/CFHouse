@@ -5,6 +5,7 @@
 body{
     font-family: Inter,sans-serif;
     background-color:  #E1D4C9;
+    font-weight: 600;
 }
 a{
     text-decoration: none;
@@ -19,7 +20,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
+    padding: 20px 0;
 }
 
 .header__menu{
@@ -39,7 +40,6 @@ a{
 .menu__item-link, .burger__text-link{
     color:#403F3D;
     font-size: 16px;
-    font-weight: 600;
     text-decoration: underline transparent;
     transition: text-decoration 300ms ease;
 }
@@ -61,5 +61,63 @@ a{
 }
 .header__burger-menu:hover{
     border-bottom: 2px solid #403F3D;
+}
+.main__wrapper{
+    background: url('../img/img-hero.jpg'), lightgray 50% / cover no-repeat;
+    border-radius: 40px;
+}
+.main__content{
+    padding: 100px;
+    max-width: 530px;
+}
+.main__title{
+    color:#E1D4C9;
+    font-size: 72px;
+    font-style: italic;
+    line-height: 105%; /* 75.6px */
+}
+.color-span-title{
+    color: #B0907A;
+}
+.main__text{
+    color: #E1D4C9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin: 40px 0;
+}
+.btn-menu svg path{
+    display: flex;
+    stroke: #E1D4C9;
+    transition: stroke ease 0.3s;
+}
+.btn-menu{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+    gap: 8px;
+    border: 0;
+    border-radius: 100px;
+    background-color:#E1D4C9;
+    width: 200px;
+    height: 64px;
+    padding: 24px 71px;
 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btn-menu:hover svg path{
+    stroke: #403F3D;
+}
+.choose-coffee__wrapper{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.choose-coffee__title{
+    color: #403F3D;
+    font-size: 60px;
 }
