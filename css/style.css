@@ -85,6 +85,10 @@ button {
     transition: border-bottom ease 0.5s;
 }
 
+.header__burger-menu.active {
+    border-bottom: 2px solid #403F3D;
+}
+
 .header__burger-menu:hover {
     border-bottom: 2px solid #403F3D;
 }
@@ -108,6 +112,7 @@ button {
 
 .color-span-title {
     color: #B0907A;
+    font-style: italic
 }
 
 .enjoy__text {
@@ -169,8 +174,9 @@ button {
     background-color: transparent;
     transition: all ease 0.3s;
 }
+
 .btn-arrow:hover,
-.btn-arrow:hover svg path{
+.btn-arrow:hover svg path {
     background-color: #665F55;
     stroke: #E1D4C9;
 }
@@ -293,11 +299,13 @@ button {
     line-height: 24px;
     margin: 40px 0;
 }
-.mobile-app__content-btn{
+
+.mobile-app__content-btn {
     display: flex;
     gap: 20px;
 }
-.mobile-app__btn{
+
+.mobile-app__btn {
     display: flex;
     align-items: end;
     gap: 8px;
@@ -311,21 +319,141 @@ button {
     cursor: pointer;
     transition: all ease 0.3s;
 }
+
 .mobile-app__btn:hover,
-.mobile-app__btn:hover svg path{
+.mobile-app__btn:hover svg path {
     background-color: #665F55;
     color: #E1D4C9;
     fill: #E1D4C9;
 
 }
-.mobile-app__btn-text{
+
+.mobile-app__btn-text {
     display: flex;
     flex-direction: column;
 }
-.mobile-app__btn-font{
+
+.mobile-app__btn-font {
     font-size: 16px;
 }
-.footer__wrapper{
+
+.favourite-coffee__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.favourite-coffee__content-title {
+    max-width: 800px;
+    color: #403F3D;
+    text-align: center;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+.favourite-coffee__content-btn {
+    display: flex;
+    gap: 16px;
+}
+
+.favorite-btn__item {
+    display: flex;
+    gap: 8px;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: transparent;
+    border: 1px solid #C1B6AD;
+    color: #403F3D;
+    font-size: 16px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.favorite-btn__item:hover {
+    background-color: #968d7c;
+}
+
+.favorite-btn__item.active {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+.favorite-coffee__content-items{
+    display: grid;
+    grid-template-columns: repeat(4,310px);
+    grid-template-rows: repeat(2,506px);
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.favorite__item{
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #C1B6AD;
+    transition: all ease 0.6s;
+}
+.favorite__item-img{
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+    background-position: center;
+    background-size: cover;
+}
+.favorite__item-img.image1{
+    background-image: url('../img/coffee-1.jpg');
+}
+.favorite__item-img.image2{
+    background-image: url('../img/coffee-2.jpg');
+}
+.favorite__item-img.image3{
+    background-image: url('../img/coffee-3.jpg');
+}
+.favorite__item-img.image4{
+    background-image: url('../img/coffee-4.jpg');
+}
+.favorite__item-img.image5{
+    background-image: url('../img/coffee-5.jpg');
+}
+.favorite__item-img.image6{
+    background-image: url('../img/coffee-6.jpg');
+}
+.favorite__item-img.image7{
+    background-image: url('../img/coffee-7.jpg');
+}
+.favorite__item-img.image8{
+    background-image: url('../img/coffee-8.jpg');
+}
+.favorite__item:hover{
+    transform: scale(98%);
+}
+.favorite__item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 20px;
+    height: 156px;
+    position: relative;
+}
+.favorite__item-title, .favorite__item-price{
+    color:#403F3D;
+    font-size: 24px;
+}
+.favorite__item-price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.favorite__item-text{
+    color:#403F3D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: auto;
+}
+.footer__wrapper {
     display: flex;
     gap: 100px;
     justify-content: flex-start;
@@ -334,46 +462,56 @@ button {
     margin-bottom: 40px;
     border-radius: 40px;
     background: #665F55;
+    box-sizing: border-box;
 }
-.footer__content{
+
+.footer__content {
     max-width: 530px;
 }
-.footer__btn-container{
+
+.footer__btn-container {
     margin-top: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 12px;
 }
-.footer__content-title{
+
+.footer__content-title {
     color: #E1D4C9;
     font-size: 60px;
     line-height: 75px;
 }
-.footer-btn{
-    border-color:#E1D4C9;
+
+.footer-btn {
+    border-color: #E1D4C9;
     transition: all ease 0.3s;
 }
+
 .footer-btn:hover svg path,
-.footer-btn:hover{
-    background:#E1D4C9;
+.footer-btn:hover {
+    background: #E1D4C9;
     stroke: #403F3D;
 }
-.footer__contact{
+
+.footer__contact {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.footer__contact-title{
+
+.footer__contact-title {
     color: #E1D4C9;
     font-size: 24px;
 }
-.footer__contact-items{
+
+.footer__contact-items {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.footer__contact-item{
+
+.footer__contact-item {
     max-width: max-content;
     display: flex;
     align-items: center;
@@ -382,14 +520,17 @@ button {
     border-bottom: 2px solid transparent;
     transition: border-bottom ease 0.3s;
 }
-.footer__contact-item:hover{
+
+.footer__contact-item:hover {
     border-bottom: 2px solid #E1D4C9;;
 }
-.footer__item-link{
+
+.footer__item-link {
     background-color: transparent;
     color: #E1D4C9;
     font-size: 16px;
 }
-.footer__item-link svg{
+
+.footer__item-link svg {
     margin-right: 8px;
 }
